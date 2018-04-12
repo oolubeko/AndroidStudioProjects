@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udacity.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/udacity"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Udacity"
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@id/street"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2465 Latham St"
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@id/city"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mountainv View, CA, 94043"
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@id/phone"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="650-555-5555"
+        android:textSize="36sp" />
+</RelativeLayout>
